@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconfont/material-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Registro</title>
+</head>
+
+<style>
+    body {
+        background-image: url(img/registro.png);
+        background-position: initial left;
+        background-position-y: 150px;
+        background-position-x: 50px;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 287px;
+
+    }
+
+    footer {
+        position: fixed;
+    }
+
+    .abs-center {
+        display: flex;
+        align-items: flex-end;
+        padding: 20px;
+        margin-top: -50px;
+        margin-left: -700px;
+        margin-right: 0px;
+        min-height: 80vh;
+    }
+
+    .form {
+        width: 350px;
+    }
+
+    #letra {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 45px;
+    }
+
+    #margen {
+        margin-left: 0px;
+    }
+
+    #datos {
+        margin-top: -100px;
+        margin-left: 200px;
+        margin-right: 500px;
+        min-height: 80vh;
+    }
+  #letra {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 45px;
+        text-align: center;
+        font-style: italic;
+        font-family: 'Times New Roman', Times, serif;
+    }
+</style>
+
+<body>
+    <nav class="navbar navbar-light" style="background-color: #f0b840;">        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#">
+            <img src="img/Logo.jpg" width="30" height="30">
+            Delivery Nava
+        </a>
+        <button class="navbar-toggler" data-toogle="collapse" data-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container">
+        <div class="abs-center">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card mt-5">
+		<div>
+                    <h3 id="letra">Registrese en el formulario</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">perm_identity</i>
+                                </div>
+				</div>
+                             <input type="text" name="user" id="user" class="form-control" placeholder="Nombre">
+                            
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">short_text</i>
+                                </div>
+                            </div>
+                            <input type="text" name="apellido_pat" id="apellido_pat" class="form-control"
+                                placeholder="Apellido Paterno">
+                            <input type="text" name="apellido_mat" id="apellido_mat" class="form-control"
+                                placeholder="Apellido Materno">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">account_circle</i>
+                                </div>
+                            </div>
+                            <input type="text" name="Nombre_usuario" id="nombre_usuario" class="form-control"
+                                placeholder="Nombre de Usuario">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">https</i>
+                                </div>
+                            </div>
+                            <input type="password" name="password" id="passwd" class="form-control"
+                                placeholder="Contraseña">
+                            <input type="password" name="Confirma_password" id="confirma_passwd" class="form-control"
+                                placeholder="Confirmar Contraseña">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">today</i>
+                                </div>
+                            </div>
+                            <input type="text" name="fecha_nac" id="fecha_nac" class="form-control"
+                                placeholder="Fecha de Nacimiento (AAAA/MM/DD)">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">room</i>
+                                </div>
+                            </div>
+                            <input type="text" name="Domicilio" id="domicilio" class="form-control"
+                                placeholder="Domicilio">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">assignment_ind</i>
+                                </div>
+                            </div>
+                            <input type="text" name="Edad" id="edad" class="form-control" placeholder="Edad">
+                        </div>
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">wc</i>
+                                </div>
+                            </div>
+                            <input type="text" name="Sexo" id="sexo" class="form-control" placeholder="Sexo">
+                        </div>
+                        
+                        <div class="alert alert-danger mt-1" role="alert" id="msgLogin">
+                        </div>
+                       <br>
+                        <button class="btn btn-primary" id="margen" onclick="registrar()" data-toggle="modal" data-target="#Confirmar">Registrar</button>
+                        <a href="index.html"><button class="btn btn-danger" id="margen">Cancelar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+      
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/registrar.js"></script>
+</body>
+
+</html>

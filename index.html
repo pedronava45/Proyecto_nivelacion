@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/iconfont/material-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<style>
+    body {
+        background-image: url(img/fondo1.jpg);
+        background-position: center;
+        background-repeat: repeat;
+        background-attachment: fixed;
+        background-size: 22;
+    }
+    footer {      
+        position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+    } 
+    .abs-center {
+        display: flex;
+        align-items: center;
+        color:black;
+        margin-left: -650px;
+        margin-right: 0px;
+        min-height: 75vh;
+    }
+    .form {
+        width: 350px;
+    }
+    #letra {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 45px;
+        text-align: center;
+        font-style:inherit;
+        font-family: 'Times New Roman', Times, serif;
+    }
+    #letra1 {
+        font-style: normal;
+        font-weight: 20;
+        font-size: 15px;
+        font-style:inherit;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+</style>
+<body>
+    <nav class="navbar navbar-light" style="background-color: #f0b840;">        <a class="navbar-brand" href="#">
+            <img src="img/Logo.jpg" width="30" height="30">
+            Delivery Nava
+        </a>
+        <button class="navbar-toggler" data-toogle="collapse" data-target="#menuPrincipal">
+            <span class="navbar-toggler-icon"></span>
+        </button>      
+    </nav>
+    <div class="container">
+        <div class="center">
+            <div class="col"></div>
+            <div class="col">
+                <div class="card mt-5">
+                    <div class="card-header colorFondo">
+                        <h3 id="letra">Login</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">account_circle</i>
+                                </div>
+                            </div>
+                            <input type="text" name="user" id="user" class="form-control"
+                                placeholder="Nombre de Usuario">
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <i class="material-icons align-middle">https</i>
+                                </div>
+                            </div>
+
+                            <input type="password" name="pass" id="pass" class="form-control" placeholder="Contraseña">
+                        </div>
+                        <div class="alert alert-danger mt-1" role="alert" id="msgLogin">
+                        </div>
+                         <div class="input-group mt-2">
+                            <div class="input-group-prepend">
+                               <div class="input-group-text">
+                                   <i class="material-icons align-middle">settings</i>
+                               </div>
+                               <div>
+                                   <form>
+                                       <div class="form-row align-items-center">
+                                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                         <div class="col-auto my-1">
+                                           <label class="mr-sm-2 sr-only" for="inlineFormCustomSelect">Preference</label>
+                                           <select class="custom-select mr-sm-2" id="tipouser">
+                                             <option selected>Elegir</option>
+                                             <option value="Empleado">Repartidores</option>
+                                             <option value="Cliente">Cliente</option>
+                                           </select>
+                                         </div>
+                                         <div class="col-auto my-1">
+                                           
+                                         </div>
+                                       </div>
+                                     </form>
+                               </div>
+                           </div>
+                           </div>
+
+                        <div class="form-group form-check">
+                            
+                            <label class="form-check-label" for="exampleCheck1" id="letra1">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="Registro.html">Crear Cuenta</a></label> 
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <button class="btn btn-primary"  onclick="login();" >Ingresar</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
+    <footer class="container-fluid">
+        <div class="navbar navbar-light" style="background-color: #ffd57a;">
+            <div class="col">
+                <p class="text-center">Copyright Delivery Nava(c) 2020. Todos los derechos reservados. </p>
+                <p class="text-center"><a href="mailto:PedroNava@gmail.com">Contacto</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/validacion.js"></script>
+</body>
+</html>
